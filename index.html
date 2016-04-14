@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/ramos.jpg','imagenes/causas2.png','imagenes/consecuencias2.png')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-add-back-btn="Regresar" data-back-btn-theme="b">
+    <h1>CONTAMINACIÓN</h1> 
+    </div>
+    <div data-role="main" class="ui-content">
+     <center> 
+    <div>
+      <img src="imagenes/principal1.png" width="50%" height="50%"> </div>
+    </div>
+    </center>
+  
+<div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>¿QUÉ ES LA CONTAMINACIÓN?</h2>
+  <p> Se muestra informacion sobre lo que es la contaminacion</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>TIPOS DE CONTAMINACIÓN</h2>
+    <p>Se mostrara informacion sobre los distintos tipos de contaminación </p>
+    </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>CAUSAS Y CONSECUENCIAS</h2>
+     <p> Se muestran las causa y las consecuencias de la contaminacion</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>CONTAMINACIÓN EN MI COMUNIDAD</h2>
+   <p>Se muestra los tipos de contamincaion que hay en mi comunidad</p>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>MEDIDAS PREVENTIVAS </h2>
+   <p> Te daremos algunas medidas preventivas para que las pongas en practica </p>
+    </a>
+    </li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+   <img src="imagenes/conta5.png" width="46" height="46">
+   </div>
+   <div>
+    <h4>Aplicacion 3</h4>
+    <h4>Karla Canete Fortozo</h4>
+    </div>
+</div>
+</div>
+
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿QUÉ ES LA CONTAMINACIÓN?</h1>
+    </div>
+    <div data-role="content" align="center">
+     <p>La Contaminación se denomina a la presencia en el ambiente de cualquier agente químico, físico o biológico nocivos para la salud o el bienestar de la población, de la vida animal o vegetal.
+     </p>
+     <br>
+       <img src="imagenes/contaminacion.png" width="40%" height="40%"> 
+     <p>Esta degradación del medio ambiente por un contaminante externo puede provocar daños en la vida cotidiana del ser humano y alterar las condiciones de supervivencia de la flora y la fauna.</p>
+     <br>
+       <img src="imagenes/c1.png" width="40%" height="40%"> 
+     <p>Alrededor de 2 millones de personas podrían morir cada año por alguna causa atribuible a la contaminación atmosférica, asegura la Organización Mundial de la Salud. Según este estudio la mayor cantidad de muertes se producen en los países en desarrollo donde se concentran  altas densidades de partículas nocivas para la salud.</p>
+     <br>
+       <img src="imagenes/c2.png" width="40%" height="40%">
+    </div>  
+  
+  <div data-role="footer" align="center" data-theme="a">
+   <div>
+   <img src="imagenes/conta5.png" width="46" height="46">
+   </div>
+   <div>
+    <h4>Aplicacion 3</h4>
+    <h4>Karla Canete Fortozo</h4>
+    </div>
+</div>
+</div>
+  </div>
+</div>
+ </div>
+
+ 
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>TIPOS DE CONTAMINACIÓN</h1>
+    </div>
+    <div data-role="content" align="center">
+    <p>Diferentes tipos de contaminación están clasificados por su parte que afectan o resultan por las causas de contaminación particulares. Cada uno de estos tipos tiene sus propias causas y consecuencias distintivas. El estudio de la contaminación ambiental ayuda a entender los conceptos básicos con mayor detalle y producir protocolos para los tipos específicos. </p>
+    <br>
+     <img src="imagenes/tipos.png" width="40%" height="40%">
+     <br>
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+        <h1>CONTAMINACIÓN DEL AGUA</h1>
+        <p>Cuando se incorpora al agua sustancias extrañas como microorganismos, productos químicos, residuos industriales o aguas residuales. Estos contaminantes hacen que el agua no sea beneficiosa para el ser humano ni para la vida vegetal y animal.</p>
+        <br>
+         <img src="imagenes/agua1.png" width="40%" height="40%">
+     </div>
+       </div>
+    <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+        <h1>CONTAMINACIÓN DEL AIRE</h1>
+        <p>se denomina a la adición de elementos tóxicos como el CO. Este tipo de contaminación afecta al bienestar de las personas, animales y plantas de forma negativa.</p>
+        <br>
+         <img src="imagenes/aire1.png" width="40%" height="40%">
+     </div>
+       </div>
+       <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+        <h1>CONTAMINACIÓN DEL SUELO</h1>
+        <p>cuando se introduce material extraño y dañino en las capas terrestres. Estos contaminantes producen un desequilibrio físico, químico y biológico en el suelo.</p>
+        <br>
+         <img src="imagenes/suelo1.png" width="40%" height="40%">
+     </div>
+       </div>
+       </div>
+    <div data-role="footer" align="center" data-theme="a">
+   <div>
+   <img src="imagenes/conta5.png" width="46" height="46">
+   </div>
+   <div>
+    <h4>Aplicacion 3</h4>
+    <h4>Karla Canete Fortozo</h4>
+    </div>
+</div>
+</div>
+</div> 
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b"> 
+        <h1>CAUSAS Y CONSECUENCIAS</h1>
+    </div>
+    <div data-role="content" align="center">
+    <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>CAUSAS</h1>
+        <p>Los principales causantes de la contaminación ambiental son:</p>
+       <p> desechos sólidos domésticos</p>
+       <p>desechos sólidos industriales</p>
+       <p> exceso de fertilizante y productos químicos</p>
+       <p> tala</p>
+       <p> quema</p>
+       <p>basura</p>
+       <p>el monóxido de carbono de los vehículos</p>
+       <p>desagües de aguas negras o contaminadas al mar o ríos
+       Muchas de las causas del deterioro ambiental es debido a : la sobreexplotación, destrucción del hábitat, la contaminación, la erosión y la deforestacion. Estudios realizados dicen que el       deterioro del medio ambiente provoca el 21% de los problemas de salud que sufre la población mundial.</p>
+       <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image33','','imagenes/causas2.png',1)"><img src="imagenes/causas.png" width="480" height="320" id="Image33"></a></p>
+       <p>&nbsp;</p>
+      </div> 
+     </div>
+     <div data-role="main" class="ui-content">
+      <div data-role="collapsible" data-content-theme="false">
+        <h1>CONSECUENCIAS</h1>
+        <p>La contaminación ambiental deteriora cada vez mas a nuestro planeta y a nosotros mismos pues según investigaciones al respirar el aire contaminado esto afecta nuestra salud cardiovascular
+por lo que normas estrictas de aire limpio contribuirían a una mejor salud con efectos en gran escala. 
+Otra consecuencia es el debilitamiento de la capa de ozono, que protege a los seres vivos de la radiación ultravioleta del Sol, debido a la destrucción del ozono estratosférico y esto provoca el calentamiento global.La contaminacion al medio atenta contra la vida de plantas, animales y personas, genera daños físicos en los individuos, convierte en un elemento no consumible al agua
+y hace que en los suelos contaminados no sea posible la siembra. Esto afecta  a demás el clima y las actividades realizadas por el ser humano dañandolo y perjudicándole. </p>
+        <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','imagenes/consecuencias2.png',1)"><img src="imagenes/consecuencias.png" width="580" height="329" id="Image30"></a></p>
+        <p><br>
+        </p>
+      </div> 
+     </div>
+     </div>
+     <div data-role="footer" align="center" data-theme="a">
+   <div>
+   <img src="imagenes/conta5.png" width="46" height="46">
+   </div>
+   <div>
+    <h4>Aplicacion 3</h4>
+    <h4>Karla Canete Fortozo</h4>
+    </div>
+</div>
+  </div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CONTAMINACIÓN EN MI COMUNIDAD</h1>
+  </div>
+  <div data-role="content" align="center">
+   <p>La mayor problematica de contaminacion en San Felix Hidalgo es la contaminacion al suelo, esto es por que en esta región la mayoria de los habitantes son campesinos lo cual quiere decir que los plagicidas son los que estan acabando con el suelo, hace pocos años comenzaron con un gran negocio que es la siembra de epazote, y esto con lleva a que los fumiguen 3 veces a la semana, esto afecta tanto a la naturaleza como a nosotros que consumimos esta planta, necesita urgentemente un cambio por que sino nos acabaremos alimentando de puros quimicos.</p>
+   <br>
+  <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:320px;height:240px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+   <br>
+   <h2>En la comunidad de San Felix Hidalgo existe un grupo de Jovenes llamado Onda Juvenil Catolica (OJC), el cual se encarga de realizar jornadas de limpieza tan de la comundidad con en otras comunidades que abarca la parroquia, y se reunen con los habitantes de esas colonias para darles platicas sobre el cuidado del medio ambiente, al igual que van a los campos para platicar con los campesinos y hacer conciencia en ellos para controlar el alto uso de fertilizantes y pesticidas</h2>
+   <br>
+    <img src="imagenes/ojc.png" width="40%" height="40%">
+  </div>
+ <div data-role="footer" align="center" data-theme="a">
+   <div>
+   <img src="imagenes/conta5.png" width="46" height="46">
+   </div>
+   <div>
+    <h4>Aplicacion 3</h4>
+    <h4>Karla Canete Fortozo</h4>
+    </div>
+</div>
+  </div>
+
+ 
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>MEDIDAS PREVENTIVAS</h1>
+    </div>
+    <div data-role="content" align="center">
+     <h2>Controlar el uso de fertilizantes y pesticidas</h2>
+     <br>
+      <img src="imagenes/medidas6.png" width="40%" height="40%"> 
+     <h2>Usar menos el coche</h2>
+     <br>
+      <img src="imagenes/medidas4.png" width="40%" height="40%">  
+     <h2>Reducir Reciclar Reutilizar</h2>
+     <br>
+      <img src="imagenes/medidas5.png" width="40%" height="40%"> 
+     <h2>Ahorra agua</h2>
+     <br>
+      <img src="imagenes/medidas.png" width="40%" height="40%"> 
+      <h1>NO OLVIDES QUE EL CAMBIO ESTA EN TUS MANOS Y SI QUEREMOS EMPEZAR EL CAMBIO, HAY QUE EMPEZAR POR NOSOTROS.</h1>
+       <img src="imagenes/medidas3.png" width="40%" height="40%"> 
+   </div>
+   <div data-role="footer" align="center" data-theme="a">
+   <div>
+   <img src="imagenes/conta5.png" width="46" height="46">
+   </div>
+   <div>
+    <h4>Aplicacion 3</h4>
+    <h4>Karla Canete Fortozo</h4>
+    </div>
+</div>
+   </div>
+ 
+         
+</body>
+</html>
